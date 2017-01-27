@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         String hallo;
 String hrl;
         int zahl;
-
+        //hinzugefügt von Helena Bayer
 
     }
 }
