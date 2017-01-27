@@ -12,5 +12,8 @@ public class MainActivity extends AppCompatActivity {
         String name;
         String hallo;
 
+        int zahl;
+
+
     }
 }
