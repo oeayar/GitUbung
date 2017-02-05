@@ -1,5 +1,7 @@
 package com.example.oeayar.gitubung;
 
+import android.content.Context;
+import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -8,6 +10,14 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class Verbindung_DB extends SQLiteOpenHelper {
+    public Verbindung_DB(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+
+    public Verbindung_DB(Context context, String name, SQLiteDatabase.CursorFactory factory, int version, DatabaseErrorHandler errorHandler) {
+        super(context, name, factory, version, errorHandler);
+    }
+
     @Override
     public void onCreate(SQLiteDatabase db) {
 
