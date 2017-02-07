@@ -14,7 +14,7 @@ public class Wertetbl {
 
   //  public static final String [] ALL_COLUMNS=new String[]{Breite + Länge + Datum};
 
-    public static final String SQL_DROP= "DROP TABLE IF EXISTS" + TABLE_NAME;
+    public static final String SQL_DROP= "DROP TABLE IF EXISTS " + TABLE_NAME;
 
 
     public static final String SQL_CREATE=

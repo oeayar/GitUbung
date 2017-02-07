@@ -153,8 +153,17 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
 
         Cursor rows=db.rawQuery("SELECT Max(id) FROM Werte ", null);
-        String id= rows.getString(0);
-        db.execSQL(Wertetbl.STMT_INSERT, new String [] { id, breite.getText().toString(), lange.getText().toString(), date.toString()});
+        rows.moveToNext();
+        int id;
+        if(rows.getCount()!=-1){
+
+            id= rows.getInt(0);
+            id++;
+        }else{
+            id=0;
+        }
+
+        db.execSQL(Wertetbl.STMT_INSERT, new String [] { id+"", breite.getText().toString(), lange.getText().toString(), date.toString()});
 
     }
 

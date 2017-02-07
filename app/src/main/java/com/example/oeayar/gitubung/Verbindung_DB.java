@@ -15,7 +15,7 @@ public class Verbindung_DB extends SQLiteOpenHelper {
 
     private final static String TAG= "Datenbank";
     private final static String DB_NAME="daten.db";
-    private final static int DB_VERSION=2;
+    private final static int DB_VERSION=3;
 
     public Verbindung_DB(Context context){
         super(context, DB_NAME, null, DB_VERSION);
