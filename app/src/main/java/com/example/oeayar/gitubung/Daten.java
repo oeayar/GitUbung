@@ -21,5 +21,12 @@ public class Daten {
         this.datum = datum;
     }
 
-
+    @Override
+    public String toString() {
+        return "Daten{" +
+                "breite=" + breite +
+                ", länge=" + länge +
+                ", datum='" + datum + '\'' +
+                '}';
+    }
 }

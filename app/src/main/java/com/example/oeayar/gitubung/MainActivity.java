@@ -145,10 +145,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         TextView breite = (TextView) findViewById(R.id.textView);
         breite.setText(String.format("%.4f", latitude));
 
-        TextView lange = (TextView) findViewById(R.id.textView2);
+        TextView lange = (TextView) findViewById(R.id.textView3);
         lange.setText(String.format("%.4f", longitude));
 
-        TextView datum = (TextView) findViewById(R.id.textView3);
+        TextView datum = (TextView) findViewById(R.id.textView2);
         datum.setText(date.toString());
 
 
